@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- bootstrap cdn -->
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins&display=swap"
+        rel="stylesheet">
+    <!-- fonts -->
+
+    <!-- swiper js cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- swiper js cdn -->
+
+
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <title>LMS Landing Page</title>
+</head>
+
+<body>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+
+            <div class="site_logos w-100 d-flex justify-content-md-between justify-content-center flex-wrap gap-3 mb-5">
+                <div class="logo">
+                    <img src="./images/WARD-Logo-Horizontal.png" alt="">
+                </div>
+
+                <div class="logo">
+                    <img src="./images/eiu.png" alt="">
+                </div>
+            </div>
+
+            <h1>Transform Your Future with Quality Education</h1>
+            <p>Welcome to world academy for research and development. Introducing world class MBA and Master’s programme. Shaped by Industry Needs and Curriculum Designed in Collaboration with Industry experts and educators for Career Success.</p>
+        </div>
+    </section>
+
+
+
+    <!-- Featured Programmes Section start -->
+    <section class="programmes py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title feat_title">Featured Programmes</h2>
+                <p class="section-subtitle">Explore our most popular and career-driven master's programmes</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Programme Card -->
+                <div class="col-md-4">
+                    <div class="programme-card p-4 text-center">
+                        <h4 class="mb-2"><a href="https://mba-edu.uk/courses">Master of Business Administration (M.B.A)</a></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-evenly mt-3">
+                <!-- Programme Card -->
+                <div class="col-md-4">
+                    <div class="programme-card p-4 text-center mb-md-0 mb-3">
+                        <h4 class="mb-2"><a href="https://mba-edu.uk/courses">Master's</a></h4>
+                    </div>
+                </div>
+
+                <!-- Programme Card -->
+                <div class="col-md-4">
+                    <div class="programme-card p-4 text-center">
+                        <h4 class="mb-2"><a href="https://mba-edu.uk/courses">Master of Science (M.Sc)</a></h4>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+    <!-- Featured Programmes Section end -->
+
+
+    <!-- course name slider start -->
+    <section class="course_slider my-5">
+        <div class="container">
+
+            <div class="section_heading">
+                <h2 class="services-title mb-3">Our Courses</h2>
+            </div>
+
+            <div class="coursename_swiper swiper">
+                <div class="swiper-wrapper">
+                </div>
+            </div>
+
+            <div class="text-center mt-3">   
+                <a class="btn mySepBtn" href="https://mba-edu.uk/courses">Explore All Courses</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- course name slider end -->
+
+
+    <!-- lead form start -->
+    <section class="leadForm py-5">
+        <div class="container">
+            <div class="section_heading text-center mb-4">
+                <h2 class="section-title v2">Empowering Access to Globally Recognized Qualifications</h2>
+                <p>Submit the form below to receive a prompt response from our team</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-9">
+                    <div class="card shadow-sm border-0 rounded-4 p-4">
+                        <form id="main_lead_form">
+                            <div class="mb-3">
+                                <label for="fname" class="form-label">Name <span class="text-danger">*</span></label>
+                                <input type="text" id="fname" name="name" placeholder="Enter your full name" class="form-control rounded-3" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="femail" class="form-label">Email <span class="text-danger">*</span></label>
+                                <input type="email" id="femail" name="email" placeholder="Enter your email" class="form-control rounded-3" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fnumber" class="form-label">Telephone <span class="text-danger">*</span></label>
+                                <input type="tel" id="fnumber" name="phone" placeholder="Contact number" class="form-control rounded-3" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="fcourse">Interested Course <span class="text-danger">*</span></label>
+                                <select class="form-select rounded-3" name="course_name" id="fcourse" required>
+                                    <option value="" selected disabled>Select Your Course</option>                                  
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="fcountry">Country <span class="text-danger">*</span></label>
+                                <select class="form-select rounded-3" name="country" id="fcountry" required>
+                                    <option value="" selected disabled>Select Your Country</option>                                  
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fprof" class="form-label">Designation <small class="text-muted">(Optional)</small></label>
+                                <input type="text" id="fprof" name="designation" placeholder="Example: Executive, Manager, etc" class="form-control rounded-3">
+                            </div>
+                            <div class="mb-3">
+                                <label for="forg" class="form-label">Organization <small class="text-muted">(Optional)</small></label>
+                                <input type="text" id="forg" name="organization" placeholder="Name of the organization" class="form-control rounded-3">
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-main rounded-3 py-2" type="submit" style="font-weight:600;">Receive Info</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- lead form end -->
+
+
+    <!-- about programme section start -->
+    <section class="programme-info-section py-5">
+        <div class="container">
+            <div class="programme-info-card p-4 rounded-4 shadow-sm">
+                <h2 class="mb-3 text-center section-title">
+                    About Our Programmes
+                </h2>
+                <p class="lead text-center">
+                    The Master's programmes offered by World Academy represent a distinguished academic initiative, designed to provide participants with the opportunity to earn a Master's or MBA degree from esteemed international university. World Academy is renowned for its commitment to fostering global perspectives through an innovative distance learning model. World Academy delivers a transformative educational experience. These programmes are equipped graduates with the critical skills and in-depth knowledge required to excel in careers that demand cultural intelligence, international collaboration, and cross-cultural leadership.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    <!-- about programme section end -->
+
+    <!-- benefits section start -->
+    <section class="services-benefits-section py-5">
+        <div class="container">
+
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8 text-center">
+                    <h2 class="services-title mb-3">Services and Benefits</h2>
+                    <p class="services-subtitle">Unlock a world of opportunities with our comprehensive support and globally recognized programmes.</p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+
+                <div class="col-md-3">
+
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-laptop-code fa-2x benefit-icon"></i>
+                        <p>Flexible Learning Management System</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-user-graduate fa-2x benefit-icon"></i>
+                        <p>Academic Support</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-credit-card fa-2x benefit-icon"></i>
+                        <p>Flexible Payment Plan</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-user-check fa-2x benefit-icon"></i>
+                        <p>Personalized Admission</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-shield-halved fa-2x benefit-icon"></i>
+                        <p>Recognized & Quality Assured</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-9" style="background-color: #f8fafc; border-radius: 20px; overflow: hidden;">
+                    <div class="row">
+                        <div class="col-md-6 ps-0 pe-0">
+                            <img loading="lazy" class="img-fluid" style="height: 100%; border-radius: 20px; width: 100%; object-fit: cover;" src="./images/businesspersons-meeting-min.jpg" alt="">
+                        </div>
+                        <div class="col-md-6" style="padding: 60px 10px;">
+                            <h2 class="my-3 text-center">Data speaks for itself</h2>
+                            
+                            <div class="benefit_stat_main d-flex flex-wrap justify-content-around mb-3">
+
+                                <div class="stat_cont text-center">
+                                    <div class="stat_number">40+</div>
+                                    <div class="stat_text">Courses</div>
+                                </div>
+
+                                <div class="stat_cont text-center">
+                                    <div class="stat_number">10K+</div>
+                                    <div class="stat_text">WARD Alumni</div>
+                                </div>
+
+                                <div class="stat_cont text-center">
+                                    <div class="stat_number">120+</div>
+                                    <div class="stat_text">Instructors</div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="benf_highlight_cont d-flex flex-column gap-4 align-items-center">
+
+                                <div class="benefit_hightlight_item d-flex gap-3">
+                                    <i class="fa-solid fa-globe fa-2x benefit-icon"></i>
+                                    <p class="mb-0">Globally Recognized Degree</p>
+                                </div>
+    
+                                <div class="benefit_hightlight_item d-flex gap-3">
+                                    <i class="fa-solid fa-certificate fa-2x benefit-icon"></i>
+                                    <p class="mb-0">Partial Scholarship Opportunity</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- benefits section end -->
+
+
+    <!-- faq section start here -->
+    <section class="faq">
+        <div class="container">
+
+            <h2 class="section-title text-center mt-2 mb-4">Frequently Asked Question</h2>
+
+            <div class="row">
+
+                <div class="col-md-8">
+    
+                    <div class="accordion" id="accordionExample">
+    
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Q : What is the self-paced Master's programme
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body border-0">
+                                    <strong>A :</strong> Our self-paced Master's programme is designed to provide participants with the flexibility to complete their degree at their own pace, anytime and anywhere. Participants will have access to our online learning platform, where they can complete coursework & interact with instructors. With no fixed lecture schedule, participants can manage their time effectively to balance work, personal, and academic commitments.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Q: How long does it take to complete the self-paced Master's programme?
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>A:</strong> The duration of the program is 01 (One) year. Depending on individual circumstances participant can take additional 06 (Six) months to complete the program. 
+                            </div>
+                            </div>
+                        </div>
+    
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Q: Are there any prerequisites for admission to the self-paced Master's programme?
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>A:</strong> Yes, applicants must hold a bachelor's degree from an accredited institution and meet the program's specific admission requirements, which may include reference letters, a personal statement, personal identification.
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    Q. Programme Duration and Programme Assessment
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>A:</strong> The duration of the program is 01 (One) year. Depending on individual circumstances participant can take additional 06 (Six) months to complete the program. The assessment is based on assignments and research paper only. There will be no exams.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                    Q. Scholarship opportunity
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>A:</strong> we are offering partial scholarships to help make our programme more affordable. Please visit our website or contact our representative to know more.
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                
+                <!-- linear-gradient(135deg, var(--secondery-color) 10%, #275160 0%) -->
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, var(--primary-color), var(--secondery-color)); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 320px; padding: 15px 10px;">
+                    <div class="text-center">
+                        <h4 class="text-white" style="font-size: 40px;"><i class="fa-solid fa-comments"></i></h4>
+                        <h3 class="text-capitalize text-white">You have different questions?</h3>
+
+                        <div class="p-2 bg-white mx-auto rounded-2 mt-4 d-flex gap-3" style="width: fit-content;">
+                            <span>Contact Us</span> <span><i class="fa-solid fa-arrow-right fa-beat-fade"></i></span>
+                        </div>
+
+                        <div class="faq-contact d-flex flex-column gap-3 mt-4">
+
+                            <div class="faq-contact-cont text-center">
+                                <p class="mb-0 text-white">Give Us a call</p>
+                                <a href="tel:01718995505" class="d-flex text-white align-items-center justify-content-center gap-3"><span><i class="fa-solid fa-phone-volume"></i></span> <span>+880 01718-995505</span></a>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-contact d-flex flex-column gap-3 mt-4">
+
+                            <div class="faq-contact-cont text-center">
+                                <p class="mb-0 text-white">Have a question</p>
+                                <a href="mailto:info@mba-edu.uk" class="d-flex text-white align-items-center justify-content-center gap-3"><span><i class="fa-solid fa-envelope"></i></span> <span>info@mba-edu.uk</span></a>
+                            </div>
+
+                        </div>              
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- faq section end here -->
+
+
+
+    <!-- turst section start -->
+    <section class="trust_section">
+        <div class="container">
+
+            <h2 class="services-title text-center mb-5">Recognitions of EIU-Paris</h2>
+
+
+            <div class="trust_logos d-flex mb-5">
+
+                <div class="tl_img text-center">
+                    <img src="./images/rc_1.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img src="./images/rc_2.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img src="./images/rc_3.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img src="./images/rc_4.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img src="./images/rc_5.png" alt="">
+                </div>
+
+
+                <div class="tl_img text-center">
+                    <img src="./images/rc_6.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img src="./images/rc_7.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img src="./images/rc_8.png" alt="">
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+    <!-- turst section end -->
+
+    <!-- turst section start -->
+    <section class="trust_section">
+        <div class="container">
+
+            <h2 class="services-title text-center mb-5">Recognitions of World Academy</h2>
+
+
+            <div class="trust_logos v2 d-flex mb-5">
+
+                <div class="tl_img text-center">
+                    <img loading="lazy" src="./images/wr_nqual.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img src="./images/wr_AAA.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img loading="lazy" src="./images/wr_profqual.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img loading="lazy" src="./images/wr_Shrm-Academically-Aligned.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img src="./images/wr_academy-provider.png.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img src="./images/wr_approved-priveder.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img loading="lazy" src="./images/wr_atd.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img loading="lazy" src="./images/wr_shrm-01.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img loading="lazy" src="./images/wr_cambridge-academy.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img loading="lazy" src="./images/wr_ipac.png" alt="">
+                </div>
+
+                <div class="tl_img text-center">
+                    <img loading="lazy" src="./images/wr_bhrc.png" alt="">
+                </div>
+                
+            </div>
+
+            <div class="text-center">
+                <a href="mba-edu.uk" class="btn mySepBtn">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- turst section end -->
+
+
+    <!-- separator section start -->
+    <section class="seperator separator_one mb-4" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url('./images/separator_img_one.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h3 class="text-center">Claim your partial scholarship today</h3>
+                    <p class="text-center">Validated, audited, quality controlled and quality assured and degree awarded by EIU-Paris</p>
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
+                    <a href="#" class="btn mySepBtn">Claim Your Offer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- separator section end -->
+    
+
+    <!-- offices section start -->
+    <section class="offices">
+        <div class="container">
+            <div class="section-hading">
+                <h2 class="services-title text-center mb-5">
+                    Offices Across Continents
+                </h2>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-2 col-6">
+                    <div class="off_addr d-flex flex-column gap-2 align-items-center">
+                        <div class="off_addr_flag">
+                            <img loading="lazy" src="./images/uk.png" alt="">
+                        </div>
+                        <div class="off_addr_name">
+                            <h5 class="mb-0">UK</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="off_addr d-flex flex-column gap-2 align-items-center">
+                        <div class="off_addr_flag">
+                            <img loading="lazy" src="./images/bangladesh.png" alt="">
+                        </div>
+                        <div class="off_addr_name">
+                            <h5 class="mb-0">Bangladesh</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="off_addr d-flex flex-column gap-2 align-items-center">
+                        <div class="off_addr_flag">
+                            <img loading="lazy" src="./images/malaysia.png" alt="">
+                        </div>
+                        <div class="off_addr_name">
+                            <h5 class="mb-0">Malaysia</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="off_addr d-flex flex-column gap-2 align-items-center">
+                        <div class="off_addr_flag">
+                            <img loading="lazy" src="./images/ghana.png" alt="">
+                        </div>
+                        <div class="off_addr_name">
+                            <h5 class="mb-0">Ghana</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-2 col-6">
+                    <div class="off_addr d-flex flex-column gap-2 align-items-center">
+                        <div class="off_addr_flag">
+                            <img loading="lazy" src="./images/tanzania.png" alt="">
+                        </div>
+                        <div class="off_addr_name">
+                            <h5 class="mb-0">Tanzania</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="off_addr d-flex flex-column gap-2 align-items-center">
+                        <div class="off_addr_flag">
+                            <img loading="lazy" src="./images/Uganda.png" alt="">
+                        </div>
+                        <div class="off_addr_name">
+                            <h5 class="mb-0">Uganda</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="off_addr d-flex flex-column gap-2 align-items-center">
+                        <div class="off_addr_flag">
+                            <img loading="lazy" src="./images/nigeria.png" alt="">
+                        </div>
+                        <div class="off_addr_name">
+                            <h5 class="mb-0">Nigeria</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="off_addr d-flex flex-column gap-2 align-items-center">
+                        <div class="off_addr_flag">
+                            <img loading="lazy" src="./images/kenya.png" alt="">
+                        </div>
+                        <div class="off_addr_name">
+                            <h5 class="mb-0">Kenya</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="off_addr d-flex flex-column gap-2 align-items-center">
+                        <div class="off_addr_flag">
+                            <img loading="lazy" src="./images/philipines.png" alt="">
+                        </div>
+                        <div class="off_addr_name">
+                            <h5 class="mb-0">Philipines</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- offices section end -->
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>Ready to dive in?</p>
+            <a class="mySepBtn" href="https://mba-edu.uk" target="_blank">Go to Full Website</a>
+        </div>
+    </footer>
+
+
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap cdn -->
+
+    <!-- font awesome cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- font awesome cdn -->
+
+    <!-- swiper js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper js cdn -->
+
+    <!-- smpt js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- smpt js -->
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
