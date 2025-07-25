@@ -58,31 +58,31 @@
     <section class="programmes py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title feat_title">Featured Programmes</h2>
+                <h2 class="section-title feat_title services-title">Featured Programmes</h2>
                 <p class="section-subtitle">Explore our most popular and career-driven master's programmes</p>
             </div>
 
-            <div class="row justify-content-center">
+
+            
+            <div class="row flex-column align-items-center gap-3 mt-3">
                 <!-- Programme Card -->
                 <div class="col-md-4">
                     <div class="programme-card p-4 text-center">
-                        <h4 class="mb-2"><a href="https://mba-edu.uk/courses">Master of Business Administration (M.B.A)</a></h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-evenly mt-3">
-                <!-- Programme Card -->
-                <div class="col-md-4">
-                    <div class="programme-card p-4 text-center mb-md-0 mb-3">
-                        <h4 class="mb-2"><a href="https://mba-edu.uk/courses">Master's</a></h4>
+                        <h4 class="mb-2">Master of Business Administration (M.B.A)</h4>
                     </div>
                 </div>
 
                 <!-- Programme Card -->
                 <div class="col-md-4">
-                    <div class="programme-card p-4 text-center">
-                        <h4 class="mb-2"><a href="https://mba-edu.uk/courses">Master of Science (M.Sc)</a></h4>
+                    <div class="programme-card i2 p-4 text-center mb-md-0 mb-3">
+                        <h4 class="mb-2">Master's</h4>
+                    </div>
+                </div>
+
+                <!-- Programme Card -->
+                <div class="col-md-4">
+                    <div class="programme-card i3 p-4 text-center">
+                        <h4 class="mb-2">Master of Science (M.Sc)</h4>
                     </div>
                 </div>
 
@@ -115,54 +115,81 @@
     <!-- course name slider end -->
 
 
+    <div class="container">
+        <div class="section_heading text-center mb-4">
+            <h2 class="section-title services-title v2">Empowering Access to Globally Recognized Qualifications</h2>
+            <p>Submit the form below to receive a prompt response from our team</p>
+        </div>
+    </div>
     <!-- lead form start -->
-    <section class="leadForm py-5">
+    <section class="leadForm py-5" style="background: url('./images/form_bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         <div class="container">
-            <div class="section_heading text-center mb-4">
-                <h2 class="section-title v2">Empowering Access to Globally Recognized Qualifications</h2>
-                <p>Submit the form below to receive a prompt response from our team</p>
-            </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-end">
                 <div class="col-lg-7 col-md-9">
-                    <div class="card shadow-sm border-0 rounded-4 p-4">
+                    <div class="">
                         <form id="main_lead_form">
-                            <div class="mb-3">
-                                <label for="fname" class="form-label">Name <span class="text-danger">*</span></label>
-                                <input type="text" id="fname" name="name" placeholder="Enter your full name" class="form-control rounded-3" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="femail" class="form-label">Email <span class="text-danger">*</span></label>
-                                <input type="email" id="femail" name="email" placeholder="Enter your email" class="form-control rounded-3" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="fnumber" class="form-label">Telephone <span class="text-danger">*</span></label>
-                                <input type="tel" id="fnumber" name="phone" placeholder="Contact number" class="form-control rounded-3" required>
-                            </div>
+                            <div class="row">
 
-                            <div class="mb-3">
-                                <label class="form-label" for="fcourse">Interested Course <span class="text-danger">*</span></label>
-                                <select class="form-select rounded-3" name="course_name" id="fcourse" required>
-                                    <option value="" selected disabled>Select Your Course</option>                                  
-                                </select>
-                            </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="fname" class="form-label">Name <span class="text-danger">*</span></label>
+                                        <input type="text" id="fname" name="name" placeholder="Enter your full name" class="form-control rounded-3" required>
+                                    </div>
+                                </div>
 
-                            <div class="mb-3">
-                                <label class="form-label" for="fcountry">Country <span class="text-danger">*</span></label>
-                                <select class="form-select rounded-3" name="country" id="fcountry" required>
-                                    <option value="" selected disabled>Select Your Country</option>                                  
-                                </select>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="femail" class="form-label">Email <span class="text-danger">*</span></label>
+                                        <input type="email" id="femail" name="email" placeholder="Enter your email" class="form-control rounded-3" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="fnumber" class="form-label">Telephone <span class="text-danger">*</span></label>
+                                        <input type="tel" id="fnumber" name="phone" placeholder="Contact number" class="form-control rounded-3" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="fcourse">Interested Course <span class="text-danger">*</span></label>
+                                        <select class="form-select rounded-3" name="course_name" id="fcourse" required>
+                                            <option value="" selected disabled>Select Your Course</option>                                  
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="fcountry">Country <span class="text-danger">*</span></label>
+                                        <select class="form-select rounded-3" name="country" id="fcountry" required>
+                                            <option value="" selected disabled>Select Your Country</option>                                  
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="fprof" class="form-label">Designation <small class="text-white">(Optional)</small></label>
+                                        <input type="text" id="fprof" name="designation" placeholder="Example: Executive, Manager, etc" class="form-control rounded-3">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="forg" class="form-label">Organization <small class="text-white">(Optional)</small></label>
+                                        <input type="text" id="forg" name="organization" placeholder="Name of the organization" class="form-control rounded-3">
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="mb-3">
-                                <label for="fprof" class="form-label">Designation <small class="text-muted">(Optional)</small></label>
-                                <input type="text" id="fprof" name="designation" placeholder="Example: Executive, Manager, etc" class="form-control rounded-3">
-                            </div>
-                            <div class="mb-3">
-                                <label for="forg" class="form-label">Organization <small class="text-muted">(Optional)</small></label>
-                                <input type="text" id="forg" name="organization" placeholder="Name of the organization" class="form-control rounded-3">
-                            </div>
+                                                     
+
                             <div class="d-grid">
                                 <button class="btn btn-main rounded-3 py-2" type="submit" style="font-weight:600;">Receive Info</button>
                             </div>
+
                         </form>
                     </div>
                 </div>
@@ -176,7 +203,7 @@
     <section class="programme-info-section py-5">
         <div class="container">
             <div class="programme-info-card p-4 rounded-4 shadow-sm">
-                <h2 class="mb-3 text-center section-title">
+                <h2 class="mb-3 text-center section-title services-title">
                     About Our Programmes
                 </h2>
                 <p class="lead text-center">
@@ -288,7 +315,7 @@
     <section class="faq">
         <div class="container">
 
-            <h2 class="section-title text-center mt-2 mb-4">Frequently Asked Question</h2>
+            <h2 class="section-title text-center services-title mt-2 mb-4">Frequently Asked Question</h2>
 
             <div class="row">
 
@@ -368,7 +395,7 @@
                 
                 <!-- linear-gradient(135deg, var(--secondery-color) 10%, #275160 0%) -->
 
-                <div class="col-md-4 d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, var(--primary-color), var(--secondery-color)); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 320px; padding: 15px 10px;">
+                <div class="col-md-4 d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, var(--primary-color), var(--secondery-color)); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 320px; padding: 15px 10px; border-radius: 10px;">
                     <div class="text-center">
                         <h4 class="text-white" style="font-size: 40px;"><i class="fa-solid fa-comments"></i></h4>
                         <h3 class="text-capitalize text-white">You have different questions?</h3>

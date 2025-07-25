@@ -221,16 +221,41 @@ h5 {
 }
 
 .programme-card {
-    background-color: #fff;
+    background: linear-gradient(270deg, var(--primary-color), var(--secondery-color));
+    background-size: 200% 200%;
+    transition: all 0.3s ease;
     border-radius: 5px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     border: 2px solid transparent;
     transition: all 0.3s ease;
     position: relative;
     z-index: 1;
+    color: #fff;
+    animation: bg_round 6s ease infinite;
 }
 
-.programme-card::before {
+/* Second card gets a delay */
+.programme-card.i2 {
+    animation-delay: 3s;
+}
+
+.programme-card.i3 {
+    animation-delay: 6s; 
+}
+
+@keyframes bg_round{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* .programme-card::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -244,11 +269,11 @@ h5 {
     z-index: -1;
     transition: opacity 0.3s ease;
     opacity: 0;
-}
+} */
 
-.programme-card:hover::before {
+/* .programme-card:hover::before {
     opacity: 1;
-}
+} */
 
 .programme-card:hover{
     background-color: var(--primary-color);
@@ -366,23 +391,31 @@ h5 {
 /* lead form section start */
 
 
-.leadForm .card {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 2rem;
-    box-shadow:  12px 12px 32px #e3e6ea, -12px -12px 32px #ffffff;
-    border: none;
-    padding: 2.5rem 2rem;
+/* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
+#main_lead_form {
+    background: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(25px);
+    padding: 40px 20px;
+    border-radius: 10px;
 }
 .leadForm .form-label {
     font-weight: 600;
-    color: #22223b;
+    /* color: #22223b; */
+    color: #fff;
 }
+
+#main_lead_form::placeholder{
+    color: #fff;
+}
+
 .leadForm .form-control,
 .leadForm .form-select {
     border: none;
     border-radius: 1rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    box-shadow:  inset 4px 4px 12px #e3e6ea, inset -4px -4px 12px #ffffff;
+    /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
+    background-color: transparent;
+    /* box-shadow:  inset 4px 4px 12px #e3e6ea, inset -4px -4px 12px #ffffff; */
+    box-shadow: inset 0px 0px 0px #e3e6ea, inset 0px 0px 2px #fff;
     font-size: 1rem;
     padding: 0.75rem 1rem;
     transition: box-shadow 0.2s;
@@ -398,7 +431,7 @@ h5 {
     color: #fff;
     border: none;
     border-radius: 1rem;
-    box-shadow:  4px 4px 12px #e3e6ea, -4px -4px 12px #ffffff;
+    /* box-shadow:  4px 4px 12px #e3e6ea, -4px -4px 12px #ffffff; */
     font-weight: 600;
     transition: background 0.2s, box-shadow 0.2s;
 }
@@ -473,6 +506,7 @@ h5 {
     gap: 10px;
     padding: 20px 10px;
     min-height: 60px;
+    border-radius: 7px;
 }
 
 @media only screen and (max-width: 768px){
@@ -534,6 +568,10 @@ h5 {
 
 .faq .accordion-button{
     background-color: #cfe2ff;
+}
+
+.faq .accordion-button::after{
+    color: #fff;
 }
 
 .faq .accordion-button:not(.collapsed){
